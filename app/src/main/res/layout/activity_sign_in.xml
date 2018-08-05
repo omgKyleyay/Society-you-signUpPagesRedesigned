@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fading_gradient"
+    tools:context=".SignIn"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/SignInLogo_tv"
+                android:layout_width="154dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/society_you_logo"
+                android:textColor="@android:color/background_light"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/SignInHeader_tv"
+                android:layout_width="251dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="66dp"
+                android:layout_marginLeft="67dp"
+                android:layout_marginRight="66dp"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/signInHeader"
+                android:textColor="@android:color/background_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SignInLogo_tv" />
+
+            <TextView
+                android:id="@+id/SignInEmailHeader_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="255dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="255dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="88dp"
+                android:text="@string/signInEmailHeader"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SignInHeader_tv" />
+
+            <EditText
+                android:id="@+id/SignInEmailBox_et"
+                android:layout_width="265dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="59dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="59dp"
+                android:layout_marginStart="60dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="@string/signInEmailBox"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/SignInPasswordHeader_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SignInEmailHeader_tv" />
+
+            <TextView
+                android:id="@+id/SignInPasswordHeader_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="277dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="277dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/signInPasswordHeader"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SignInEmailBox_et" />
+
+            <EditText
+                android:id="@+id/SignInPasswordBox_et"
+                android:layout_width="265dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="59dp"
+
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="59dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="@string/signInPasswordHeader"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SignInPasswordHeader_tv" />
+
+            <Button
+
+                android:id="@+id/MainSignIn_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/signInSignInButton"
+                android:theme="@style/WhiteButton"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/MainSignUp_btn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SignInPasswordBox_et" />
+
+            <Button
+                android:id="@+id/MainSignUp_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="56dp"
+                android:layout_marginRight="56dp"
+                android:text="@string/SignInSignUpClick"
+                android:theme="@style/BlueButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/MainSignIn_btn"
+                app:layout_constraintTop_toBottomOf="@+id/SignInPasswordBox_et"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/SignInForgotPassword_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/SignInForgotPw"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="12sp"
+                app:fontFamily="sans-serif-condensed"
+                app:layout_constraintStart_toEndOf="@+id/SignInPasswordHeader_tv"
+                app:layout_constraintTop_toBottomOf="@+id/SignInEmailBox_et" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

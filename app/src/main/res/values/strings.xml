@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Society-you sign up pages redesigned</string>
+    <string name="society_you_logo">SocietyU</string>
+    <string name="signInHeader">Where strangers can become friends</string>
+    <string name="signInEmailHeader">Email address</string>
+    <string name="signInEmailBox">Email</string>
+    <string name="signInPasswordHeader">Password</string>
+    <string name="signInSignInButton">SIGN IN</string>
+    <string name="SignInDontHaveAccount">Dont have an account?</string>
+    <string name="SignInSignUpClick">Sign up now</string>
+    <string name="SignInForgotPw">Forgot your password?</string>
+    <string name="clickHere">Click here.</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="username">Username</string>
+    <string name="birthday">Birthday</string>
+    <string name="termsAgree">I agree with the terms and conditions</string>
+    <string name="Agree">Agree</string>
+    <string name="termsAndConditions">Terms &amp; Conditions</string>
+    <string name="forgotLoginHeader">Forgot your login?</string>
+    <string name="getYouBackInHeader">Don\'t worry, we\'ll get you back in</string>
+    <string name="reset">Reset</string>
+</resources>
